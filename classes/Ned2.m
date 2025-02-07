@@ -114,7 +114,7 @@ classdef Ned2 < handle
             CmdPoint.Velocities = zeros(1,6);
             CmdPoint.Accelerations = zeros(1,6);
             CmdPoint.TimeFromStart = ros.msg.Duration(3);
-            CmdMsg.Trajectory.Header.Stamp = rostime("now") + rosduration(0.05);
+
             CmdMsg.Trajectory.JointNames = ned.JointNames(1:6);
             CmdMsg.Trajectory.Points = CmdPoint;
             
@@ -189,7 +189,6 @@ classdef Ned2 < handle
                 CmdPoints = [CmdPoints; CmdPoint];
             end
 
-            CmdMsg.Trajectory.Header.Stamp = rostime("now");
             CmdMsg.Trajectory.JointNames = ned.JointNames(1:6);
             CmdMsg.Trajectory.Points = CmdPoints;
             
@@ -215,7 +214,6 @@ classdef Ned2 < handle
             CmdPoint.Accelerations = zeros(1,6);
             CmdPoint.TimeFromStart = ros.msg.Duration(duration);
 
-            CmdMsg.Trajectory.Header.Stamp = rostime("now") + rosduration(0.05);
             CmdMsg.Trajectory.JointNames = ned.JointNames(1:6);
             CmdMsg.Trajectory.Points = CmdPoint;
            
@@ -296,7 +294,7 @@ classdef Ned2 < handle
             CmdPoint.Velocities = zeros(1,6);
             CmdPoint.Accelerations = zeros(1,6);
             CmdPoint.TimeFromStart = ros.msg.Duration(3);
-            CmdMsg.Trajectory.Header.Stamp = rostime("now") + rosduration(0.05);
+
             CmdMsg.Trajectory.JointNames = ned.JointNames(1:6);
             CmdMsg.Trajectory.Points = CmdPoint;
             
