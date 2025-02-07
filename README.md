@@ -11,7 +11,9 @@ This repository requires [MATLAB](https://www.mathworks.com/products/matlab.html
 -  **Comprehensive Curriculum:** Leverage MathWorks' extensive educational resources to design courses that cover fundamental to advanced robotics concepts. Use real\-time data and simulations to make abstract concepts tangible. 
 # Getting started
 
-To get started, install and look at *FirstSetup.mlx* for more information on using the toolbox.
+*To ensure avoid potential path length issues on Microsoft® Windows®, it is recommended to clone this repository close to the root of the C drive.*
+
+To get started, look at *FirstSetup.mlx* for more information on using the toolbox.
 
 | **File** <br>  | **Description** <br>   |
 | :-- | :-- |
